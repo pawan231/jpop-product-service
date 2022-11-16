@@ -21,8 +21,8 @@ public class ProductService {
         return productRepo.findById(id);
     }
 
-    public Optional<Product> getProductById(String name){
-        return productRepo.findById(1);
+    public Optional<Product> getProductByName(String name){
+        return productRepo.findByName(name);
     }
 
     public Product addNewProduct(Product product){
